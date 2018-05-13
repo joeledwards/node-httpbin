@@ -1,12 +1,14 @@
 {
   "name": "@buzuli/httpbin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "HTTP testing server",
   "bin": {
     "httpbin": "bin/httpbin.js"
   },
   "scripts": {
-    "start": "nodemon bin/httpbin.js --watch=./lib",
+    "start": "npm run watch",
+    "watch": "nodemon -w ./lib ./bin/httpbin.js",
+    "watch:verbose": "nodemon -w ./lib ./bin/httpbin.js -- --verbose",
     "nm": "nodemon --help"
   },
   "keywords": [],
@@ -18,7 +20,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
-    "log-a-log": "^5.0.0",
+    "log-a-log": "^6.0.0",
     "ramda": "^0.25.0",
     "yargs": "^11.0.0"
   },
