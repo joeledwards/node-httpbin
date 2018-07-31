@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "description": "HTTP testing server",
   "bin": {
-    "httpbin": "bin/httpbin.js"
+    "httpbin": "./bin/httpbin.js"
   },
   "scripts": {
     "start": "npm run watch",
