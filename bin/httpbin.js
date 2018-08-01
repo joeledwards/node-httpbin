@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 require('../lib/server')(
   require('yargs')
+  .env('HTTPBIN')
   .option('bind-port', {
     type: 'number',
     desc: 'TCP port on which the server should listen',
