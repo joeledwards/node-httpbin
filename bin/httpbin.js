@@ -5,7 +5,7 @@ require('../lib/server')(
   .option('bind-port', {
     type: 'number',
     desc: 'TCP port on which the server should listen',
-    default: 1337,
+    default: 8080,
     alias: ['p']
   })
   .option('verbose', {

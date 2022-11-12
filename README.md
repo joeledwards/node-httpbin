@@ -7,3 +7,13 @@ HTTP server for debugging clients.
 ```shell
 $ npx @buzuli/httpbin
 ```
+
+## Configuration
+
+All configuration can be performed via environment variables or CLI options.
+
+To see all configuration options:
+```shell
+$ npx @buzuli/httpbin --help
+```
+
